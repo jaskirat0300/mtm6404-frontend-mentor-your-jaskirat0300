@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  
+  <link rel="stylesheet" href="styles.css" class="css">
+</head>
+
+<body>
+  <main>
+    <div class="nav">
+      <div class="start">
+        <img class="logo" src="./images/logo.svg" alt="">
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Features <span><img class="down" src="./images/icon-arrow-down.svg" alt=""><img class="hidden up" src="./images/icon-arrow-up.svg" alt=""></span></a>
+            <div class="dropdown-content">
+              <a href="#"><span><img src="./images/icon-todo.svg" alt=""></span>Todo List</a>
+              <a href="#"><span><img src="./images/icon-calendar.svg" alt=""></span>Calendar</a>
+              <a href="#"><span><img src="./images/icon-reminders.svg" alt=""></span>Reminders</a>
+              <a href="#"><span><img src="./images/icon-planning.svg" alt=""></span>Planning</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Company <span><img class="down" src="./images/icon-arrow-down.svg" alt=""><img class="hidden up" src="./images/icon-arrow-up.svg" alt=""></span></a>
+            <div class="dropdown-content">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+
+      <div class="end">
+        <a href="#">Login</a>
+        <button class="reg">Register</button>
+      </div>      
+    </div>
+
+   <div class="mobile-nav" id="mobile-nav">
+      <img class="logo" src="./images/logo.svg" alt="">
+      <a href="#" id="openbar"><img src="./images/icon-menu.svg" alt="" ></a>
+      <a href="#" id="close" class="hidden"><img src="./images/icon-close-menu.svg" alt="" ></a>
+      <ul class="mobile-ul" id="mobile-ul">
+        <li class="mobile-dropdown" id="features">
+          <a href="#" class="mobile-dropbtn">Features <span><img class="down" src="./images/icon-arrow-down.svg" alt=""><img class="hidden up" src="./images/icon-arrow-up.svg" alt=""></span></a>
+          <div class="mobile-dropdown-content" id="features-content">
+            <a href="#"><span><img src="./images/icon-todo.svg" alt=""></span>Todo List</a>
+            <a href="#"><span><img src="./images/icon-calendar.svg" alt=""></span>Calendar</a>
+            <a href="#"><span><img src="./images/icon-reminders.svg" alt=""></span>Reminders</a>
+            <a href="#"><span><img src="./images/icon-planning.svg" alt=""></span>Planning</a>
+          </div>
+        </li>
+        <li class="mobile-dropdown" id="company">
+          <a href="#" class="mobile-dropbtn">Company <span><img class="down" src="./images/icon-arrow-down.svg" alt=""><img class="hidden up" src="./images/icon-arrow-up.svg" alt=""></span></a>
+          <div class="mobile-dropdown-content" id="company-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </li>
+        <li>Careers</li>
+        <li>About</li>    
+        <li><a href="#" id="login">Login</a></li>
+        <li><button class="reg">Register</button></li>    
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="left-part">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button id="more">Learn more</button>
+        <div class="icon">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+  
+      <div class="right-part">
+        <picture>
+          <source srcset="./images/image-hero-desktop.png" media="(min-width: 720px)">
+          <img src="./images/image-hero-mobile.png" alt="">
+        </picture>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">John A</a>.
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
